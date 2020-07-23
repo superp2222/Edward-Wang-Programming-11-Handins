@@ -10,7 +10,7 @@ public class Main {
         String compFinal;
         //These are final imputs, just to clean up things just in case something goes wrong
         Scanner scan = new Scanner(System.in);
-        //Scanner program
+        //Scanner program for detecting player input
 
 
         System.out.println("Please enter r for Rock, s for Scissors, or p for Paper");
@@ -47,7 +47,7 @@ public class Main {
                 //match results
             }
             else{
-                System.out.println("404 Choice Not Found, Play again?");
+                System.out.println("Your Choice is Invalid, Try again?");
                 //this is for if the player entered something that isn't r, s, or p
             }
 
@@ -76,7 +76,7 @@ public class Main {
                 System.out.println("Computer Choice:" + compFinal + "   Player Choice:" + playerFinal);
             }
             else{
-                System.out.println("404 Choice Not Found, Play again?");
+                System.out.println("Your Choice is Invalid, Try again?");
                 //if the player entered something that isn't r, s, or p
             }
 
@@ -103,7 +103,7 @@ public class Main {
                 System.out.println("Computer Choice:" + compFinal + "   Player Choice:" + playerFinal);
             }
             else{
-                System.out.println("404 Choice Not Found, Play again?");
+                System.out.println("Your Choice is Invalid, Try again?");
                 //if player entered something that isn't r, s, or p
             }
 
