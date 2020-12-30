@@ -78,6 +78,12 @@ public class Customer {
 
     private boolean checkOverdraft(double amt, String account){
         //your code here
+        /*
+        Requires: amt, accout, OVERDRAFT, Balance (Checking and Saving)
+        Modifies: this, withdraws Arraylist
+        Effects: Will check if the withdrawal has overdrafted or not, if it has, it will
+        revert the transaction and reimburse the account back to its initial value
+        */
         if(account.equals("Checking")){
             if(checkBalance-amt<OVERDRAFT){
                 System.out.println("A Withdrawal has overdrafted, reverting transaction");
@@ -110,14 +116,24 @@ public class Customer {
     }
 
     public Deposit getDeposit(int i){
+        /*
+        Requires: deposits Arraylist, int i
+        Modifies: this
+        Effects: Returns the deposit at index position i
+        */
         Deposit returnedDeposit = deposits.get(i);
         return returnedDeposit;
     }
     public Withdraw getWithdraw(int i){
+        /*
+        Requires: withdraws Arraylist, int i
+        Modifies: this
+        Effects: Returns the withdrawal at index position i
+        */
         Withdraw returnedWithdraw = withdraws.get(i);
         return returnedWithdraw;
     }
-
+    //below are getters i manually created to make the code and tests work
     public double getCheckBal(){
         return checkBalance;
     }
