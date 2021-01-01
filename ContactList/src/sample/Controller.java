@@ -27,6 +27,7 @@ public class Controller {
         dispaddress.setText("");
         dispphone.setText("");
         dispnotes.setText("");
+        buttondelete.setDisable(true);
     }
 
     public void dispinfo(MouseEvent mouseEvent) {
